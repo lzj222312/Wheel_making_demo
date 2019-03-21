@@ -1,10 +1,17 @@
 import Vue from 'vue'
 import Buttom from './Button'
-import icon from './icon'
+import Icon from './icon'
+import ButtonGroup from './button-group'
 
 Vue.component('g-button', Buttom)
-Vue.component('g-icon', icon)
+Vue.component('g-icon', Icon)
+Vue.component('g-button-group', ButtonGroup)
 
 new Vue({
-  el: '#app'
+  el: '#app',
+  data: {
+    loading1: false,
+    loading2: false,
+    loading3: false
+  }
 })
