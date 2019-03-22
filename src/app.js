@@ -113,4 +113,6 @@ const { expect } = chai
   button.addEventListener('click', spy, false)
   button.click()
   expect(spy).to.have.been.called()
+  vm.$el.remove()
+  vm.$destroy()
 }
