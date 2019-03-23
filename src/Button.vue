@@ -9,6 +9,8 @@
 </template>
 
 <script>
+  import Icon from './icon'
+
   export default {
     name: "Button",
     props: {
@@ -24,6 +26,9 @@
           return !(value !== 'left' && value !== 'right')
         }
       }
+    },
+    components: {
+      'g-icon': Icon
     }
   }
 </script>
