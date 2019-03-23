@@ -5,6 +5,7 @@ import Button from '../src/Button'
 Vue.config.productionTip = false
 Vue.config.devtools = false
 
+
 describe('Button', () => {
   it('Button是否存在', () => {
     expect(Button).to.exist
