@@ -1,17 +1,17 @@
 <template>
-  <div class="g-button-group">
+  <div class="s-button-group">
     <slot></slot>
   </div>
 </template>
 
 <script>
   export default {
-    name: "button-group",
+    name: "s-button-group",
     mounted() {
       for(let node of this.$el.children) {
         let name = node.nodeName.toLowerCase()
         if(name !== 'button') {
-          console.log(`g-button-group内只能使用g-button!如要进行嵌套，请自行调整样式！当前g-button父元素是${name}`)
+          console.log(`s-button-group内只能使用s-button!如要进行嵌套，请自行调整样式！当前s-button父元素是${name}`)
         }
       }
     }
@@ -19,7 +19,7 @@
 </script>
 
 <style lang="scss">
-  .g-button-group {
+  .s-button-group {
     display: inline-flex;
     vertical-align: top;
     > .g-button {

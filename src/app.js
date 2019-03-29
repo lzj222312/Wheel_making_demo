@@ -3,9 +3,9 @@ import Button from './Button'
 import Icon from './icon'
 import ButtonGroup from './button-group'
 
-Vue.component('g-button', Button)
-Vue.component('g-icon', Icon)
-Vue.component('g-button-group', ButtonGroup)
+Vue.component('s-button', Button)
+Vue.component('s-icon', Icon)
+Vue.component('s-button-group', ButtonGroup)
 
 new Vue({
   el: '#app',
@@ -23,6 +23,7 @@ new Vue({
  *
  */
 
+/*
 import chai from 'chai'
 import spies from 'chai-spies'
 
@@ -38,7 +39,6 @@ try {
       }
     })
     vm.$mount()
-    console.log(vm.$el)
     let useElement = vm.$el.querySelector('use')
     let href = useElement.getAttribute('xlink:href')
     expect(href).to.eq('#i-setting')
@@ -127,3 +127,4 @@ try {
     console.error(error.message)
   })
 }
+*/

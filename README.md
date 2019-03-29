@@ -1,4 +1,4 @@
-# 造轮子 VUE-UI框架
+# Screw VUE-UI框架
 
 [![Build Status](https://www.travis-ci.org/lzj222312/Wheel_making_demo.svg?branch=master)](https://www.travis-ci.org/lzj222312/Wheel_making_demo)
 
@@ -31,14 +31,14 @@ IE 8 及以上浏览器支持此样式
 ```
 IE 15 及以上浏览器支持此样式
 
-2. 安装 lunzi_ui
+2. 安装 screw
 ```
-npm i --save lunzi_ui
+npm i --save screw
 ```
 
 3. 引入 lunzi_ui
 ```
-import { Button, ButtonGrop, Icon } from 'lunzi_ui'
+import { Button, ButtonGrop, Icon } from 'screw'
 import 'lunzi_ui/dist/index.css'
 
 export default {
