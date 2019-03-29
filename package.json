@@ -4,9 +4,9 @@
   "description": "这是一个vue ui框架",
   "main": "dist/index.js",
   "scripts": {
-    "start-parcel": "parcel --no-cache",
+    "start-parcel": "parcel index.html --no-cache",
     "test": "parcel build test/* --no-cache --no-minify && karma start --single-run",
-    "dev-test": "parcel watch test/* --no-cache --no-minify & karma start",
+    "dev-test": "parcel watch test/* --no-cache & karma start",
     "build-components": "parcel build index.js --no-cache --no-minify"
   },
   "repository": {
