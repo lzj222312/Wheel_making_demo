@@ -33,7 +33,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   @keyframes spin {
     0% {
       transform: rotate(0deg);
@@ -42,47 +42,17 @@
       transform: rotate(360deg);
     }
   }
-  .s-button {
-    font-size: var(--font-size);
-    height: var(--button-height);
-    padding: 0 1em;
-    border-radius: var(--border-radius);
-    border: 1px solid var(--border-color);
-    background: var(--button-bg);
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    vertical-align: top;
-    &:hover {
-      border-color: var(--border-color-hover);
-    }
-    &:active {
-      background-color: var(--button-active-bg);
-    }
-    &:focus {
-      outline: none;
-    }
-    > .content {
-      order: 2;
-      margin-bottom: .1em;
-    }
-    > .icon {
-      order: 1;
-      margin-right: .2em;
-    }
+
+  .s-button {font-size: var(--font-size);height: var(--button-height);padding: 0 1em;border-radius: var(--border-radius);border: 1px solid var(--border-color);background: var(--button-bg);display: inline-flex;justify-content: center;align-items: center;vertical-align: top;
+    &:hover {border-color: var(--border-color-hover);}
+    &:active {background-color: var(--button-active-bg);}
+    &:focus {outline: none;}
+    > .content {order: 2;margin-bottom: .1em;}
+    > .icon {order: 1;margin-right: .2em;}
     &.icon-right {
-      > .content {
-        order: 1
-      }
-      > .icon {
-        order: 2;
-        margin-right: 0;
-        margin-left: .2em;
-      }
+      > .content {order: 1}
+      > .icon {order: 2;margin-right: 0;margin-left: .2em;}
     }
-    .loading {
-      animation: spin 2s infinite linear;
-      margin-right: .2em;
-    }
+    .loading {animation: spin 2s infinite linear;margin-right: .2em;}
   }
 </style>
