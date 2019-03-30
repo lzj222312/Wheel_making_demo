@@ -29,27 +29,41 @@
     body {
       font-size: var(--font-size);
     }
+
+    .box {
+      margin: 20px;
+    }
   </style>
 </head>
 <body>
   <div id="app">
-    <s-button :loading="loading1" @g-click="loading1 = !loading1">
-      按钮
-    </s-button>
-    <s-button icon="download" :loading="loading2" @g-click="loading2 = !loading2">
-      按钮
-    </s-button>
-    <s-button icon="setting" icon-position="right" :loading="loading3" @g-click="loading3 = !loading3">
-      按钮
-    </s-button>
-    <s-button-group>
-      <!--<div>-->
+    <div class="box">
+      <s-input value="张三"></s-input>
+      <s-input value="李四" disabled></s-input>
+      <s-input value="玄武" readonly></s-input>
+    </div>
+    <div class="box">
+      <s-input error="姓名不能少于2个字"></s-input>
+    </div>
+    <div class="box">
+      <s-button :loading="loading1" @g-click="loading1 = !loading1">
+        按钮
+      </s-button>
+      <s-button icon="download" :loading="loading2" @g-click="loading2 = !loading2">
+        按钮
+      </s-button>
+      <s-button icon="setting" icon-position="right" :loading="loading3" @g-click="loading3 = !loading3">
+        按钮
+      </s-button>
+      <s-button-group>
+        <!--<div>-->
         <!--<g-button icon="left">上一页</g-button>-->
-      <!--</div>-->
-      <s-button icon="left">上一页</s-button>
-      <s-button>菜单</s-button>
-      <s-button icon="right" icon-position="right">下一页</s-button>
-    </s-button-group>
+        <!--</div>-->
+        <s-button icon="left">上一页</s-button>
+        <s-button>菜单</s-button>
+        <s-button icon="right" icon-position="right">下一页</s-button>
+      </s-button-group>
+    </div>
   </div>
   <script src="./src/app.js"></script>
 </body>
