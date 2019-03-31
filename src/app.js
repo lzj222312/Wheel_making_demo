@@ -14,7 +14,18 @@ new Vue({
   data: {
     loading1: false,
     loading2: false,
-    loading3: false
+    loading3: false,
+    message1: '',
+    message2: '',
+    message3: ''
+  },
+  methods: {
+    next() {
+      console.log('下一页')
+    },
+    prev() {
+      console.log('上一页')
+    }
   }
 })
 

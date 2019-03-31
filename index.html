@@ -38,30 +38,31 @@
 <body>
   <div id="app">
     <div class="box">
-      <s-input value="张三"></s-input>
-      <s-input value="李四" disabled></s-input>
-      <s-input value="玄武" readonly></s-input>
+      <s-input v-model="message1"></s-input>
+      <s-input v-model="message2" disabled></s-input>
+      <s-input v-model="message3" readonly></s-input>
+      {{message1}}
     </div>
     <div class="box">
       <s-input error="姓名不能少于2个字"></s-input>
     </div>
     <div class="box">
-      <s-button :loading="loading1" @g-click="loading1 = !loading1">
+      <s-button :loading="loading1" @s-click="loading1 = !loading1">
         按钮
       </s-button>
-      <s-button icon="download" :loading="loading2" @g-click="loading2 = !loading2">
+      <s-button icon="download" :loading="loading2" @s-click="loading2 = !loading2">
         按钮
       </s-button>
-      <s-button icon="setting" icon-position="right" :loading="loading3" @g-click="loading3 = !loading3">
+      <s-button icon="setting" icon-position="right" :loading="loading3" @s-click="loading3 = !loading3">
         按钮
       </s-button>
       <s-button-group>
         <!--<div>-->
         <!--<g-button icon="left">上一页</g-button>-->
         <!--</div>-->
-        <s-button icon="left">上一页</s-button>
+        <s-button icon="left" @s-click="prev">上一页</s-button>
         <s-button>菜单</s-button>
-        <s-button icon="right" icon-position="right">下一页</s-button>
+        <s-button icon="right" icon-position="right" @s-click="next">下一页</s-button>
       </s-button-group>
     </div>
   </div>
