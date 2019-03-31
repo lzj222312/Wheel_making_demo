@@ -50,43 +50,17 @@
   $red: #F1453D;
   $error-message-margin-bottom: 1px;
 
-  .wrapper {
-    display: inline-flex;
-    align-items: center;
-    font-sizr: $font-size;
-    :not(:last-child) {
-      margin-right: .2em;
-    }
-    > input {
-      height: $height;
-      border: 1px solid $border-color;
-      border-radius: $border-radius;
-      padding: 0 8px;
-      font-size: inherit;
-      &:hover {
-        border-color: $border-color-hover
-      }
-      &:focus {
-        box-shadow: inset 0 1px 3px $box-shadow-color;
-        outline: none;
-      }
-      &[disabled], &[readonly] {
-        border-color: #bbb;
-        color: #bbb;
-        cursor: not-allowed;
-      }
+  .wrapper {display: inline-flex;align-items: center;font-sizr: $font-size;
+    :not(:last-child) {margin-right: .2em;}
+    > input {height: $height;border: 1px solid $border-color;border-radius: $border-radius;padding: 0 8px;font-size: inherit;
+      &:hover {border-color: $border-color-hover}
+      &:focus {box-shadow: inset 0 1px 3px $box-shadow-color;outline: none;}
+      &[disabled], &[readonly] {border-color: #bbb;color: #bbb;cursor: not-allowed;}
     }
     &.error {
-      input {
-        border-color: $red;
-      }
+      input {border-color: $red;}
     }
-    .icon-error {
-      fill: $red;
-    }
-    .error-message {
-      margin-bottom: $error-message-margin-bottom;
-      color: $red;
-    }
+    .icon-error {fill: $red;}
+    .error-message {margin-bottom: $error-message-margin-bottom;color: $red;}
   }
 </style>
