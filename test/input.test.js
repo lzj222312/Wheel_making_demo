@@ -78,7 +78,7 @@ describe('Input', () => {
         let event = new Event(eventName)
         Object.defineProperty(event, 'target', {
           value: { value: 'hi' },
-          enumerable: true
+          enumerable: true  //该对象属性是否可以枚举
         })
         let inputElement = vm.$el.querySelector('input')
         inputElement.dispatchEvent(event)

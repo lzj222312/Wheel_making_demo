@@ -37,6 +37,28 @@
 </head>
 <body>
   <div id="app">
+    <div class="grid">
+      <s-row gutter="20">
+        <s-col>1</s-col>
+        <s-col offset="2">2</s-col>
+      </s-row>
+      <s-row>
+        <s-col>1</s-col>
+        <s-col>2</s-col>
+        <s-col>3</s-col>
+      </s-row>
+      <s-row>
+        <s-col>1</s-col>
+        <s-col>2</s-col>
+        <s-col>3</s-col>
+        <s-col>4</s-col>
+      </s-row>
+      <s-row>
+        <s-col span="2">1</s-col>
+        <s-col span="20" offset="2">2</s-col>
+      </s-row>
+    </div>
+
     <div class="box">
       <s-input v-model="message1"></s-input>
       <s-input v-model="message2" disabled></s-input>
