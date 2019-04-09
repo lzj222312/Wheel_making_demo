@@ -37,11 +37,6 @@
 
 <style scoped lang="scss">
   .col {
-    width: 50%;
-    height: 100%;
-    background-color: grey;
-    border: 1px solid red;
-
     $class: col-;
     @for $n from 1 through 24 {
       &.#{$class}#{$n} {

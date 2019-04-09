@@ -33,19 +33,40 @@
     .box {
       margin: 20px;
     }
+
+    .col {
+      background-color: #aaa;
+      border: 1px solid red;
+      min-height: 100%;
+    }
   </style>
 </head>
 <body>
   <div id="app">
     <div class="grid">
       <s-row gutter="20">
-        <s-col>1</s-col>
-        <s-col offset="2">2</s-col>
+        <s-col span="5">1</s-col>
+        <s-col span="19">2</s-col>
       </s-row>
 
       <s-row>
         <s-col span="2">1</s-col>
         <s-col span="20" offset="2">2</s-col>
+      </s-row>
+
+      <s-row>
+        <s-col span="5">
+          <s-row align="left">
+            <s-col>1</s-col>
+            <s-col>2</s-col>
+          </s-row>
+        </s-col>
+        <s-col span="19">
+          <s-row align="right">
+            <s-col>3</s-col>
+            <s-col>4</s-col>
+          </s-row>
+        </s-col>
       </s-row>
     </div>
 
