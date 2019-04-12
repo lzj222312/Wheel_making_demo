@@ -61,7 +61,7 @@
       },
       colStyle() {
         let { gutter } = this
-        return gutter ? {marginLeft: gutter / 2 + 'px', marginRight: gutter / 2 + 'px'} : null
+        return {paddingLeft: gutter / 2 + 'px', paddingRight: gutter / 2 + 'px'}
       }
     },
     methods: {
