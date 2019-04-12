@@ -37,21 +37,21 @@
     .col {
       background-color: #aaa;
       border: 1px solid red;
-      min-height: 100%;
+      /*min-height: 100%;*/
     }
   </style>
 </head>
 <body>
   <div id="app">
     <div class="grid">
-      <s-row gutter="20">
-        <s-col span="5">1</s-col>
-        <s-col span="19">2</s-col>
+      <s-row>
+        <s-col span="24" :ipad="{span: 12}">1</s-col>
+        <s-col span="24" :ipad="{span: 12}">2</s-col>
       </s-row>
 
       <s-row>
         <s-col span="2">1</s-col>
-        <s-col span="20" offset="2">2</s-col>
+        <s-col span="21" offset="1">2</s-col>
       </s-row>
 
       <s-row>
