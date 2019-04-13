@@ -40,7 +40,8 @@ describe('Row', () => {
 
   it('接收align属性', () => {
     const div = document.createElement('div')
-    const Constructor = Vue.extend(row)
+    document.body.appendChild(div)
+    const Constructor = Vue.extend(Row)
     const vm = new Constructor({
       propsData: {
         align: 'right'

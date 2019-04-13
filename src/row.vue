@@ -21,7 +21,7 @@
     computed: {
       rowStyle() {
         let { gutter } = this
-        return {marginLeft: -gutter / 2 + 'px', marginRight: -gutter / 2 + 'px'}
+        // return {marginLeft: -gutter / 2 + 'px', marginRight: -gutter / 2 + 'px'}
       },
       rowClass() {
         let { align } = this

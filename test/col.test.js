@@ -30,7 +30,7 @@ describe('Col', () => {
     const Constructor = Vue.extend(Col)
     const vm = new Constructor({
       propsData: {
-        span: '1'
+        offset: '1'
       }
     }).$mount(div)
     const className = vm.$el.classList.contains('offset-1')
